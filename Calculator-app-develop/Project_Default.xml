@@ -1,0 +1,51 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyArgumentListInspection" enabled="false" level="WARNING" enabled_by_default="False" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="True" level="WARNING" enabled_by_default="True" />
+      <option name="ignoredPackages">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="pyobjc" />
+            <item index="1" class="java.lang.String" itemvalue="Pillow" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="True" level="WEAK WARNING" enabled_by_default=True>
+      <option name="IgnoredErrors">
+        <list>
+          <option value="E302" />
+          <option value="E221" />
+          <option value="E303" />
+          <option value="E234" />
+          <option value="E344" />
+          <option value="E456" />
+          <option value="E123" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="True" level="WEAK WARNING" enabled_by_default=True>
+      <option name="IgnoredErrors">
+        <list>
+          <option value="N345" />
+          <option value="N856" />
+          <option value="N456" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnboundLocalVariableInspection" enabled="false" level="WARNING" enabled_by_default=false>
+    <inspection_tool class="PyUnressolvedeReferencesInspection" enabled="True" level="WARNING" enabled_by_default=True>
+      <option name="IgnoredErrors">
+        <list>
+          <option value="PyQt5.QtCore.pyqtBoundSignal.*" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false" />
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option  name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
