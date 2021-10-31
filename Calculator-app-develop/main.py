@@ -155,7 +155,7 @@ class MainApp(UiMainWindow, QMainWindow)
             self.calc_screen.setText('0')
             self.current_operation = 'div'
 
-        if index == 11:  # multiplication button clicked
+        if index == 8:  # multiplication button clicked
             if 'x' in self.small_calc_screen.text():
                 self.small_calc_screen.setText(str(Ops.multiply(self.small_calc_screen.text().split()[0],
                                                                 self.calc_screen.text())) + ' x ')
@@ -165,7 +165,7 @@ class MainApp(UiMainWindow, QMainWindow)
             self.calc_screen.setText('0')
             self.current_operation = 'mul'
 
-        if index == 15:  # subtraction button clicked
+        if index == 9:  # subtraction button clicked
             if '-' in self.small_calc_screen.text():
                 self.small_calc_screen.setText(str(Ops.subtract(self.small_calc_screen.text().split()[0],
                                                                 self.calc_screen.text())) + ' - ')
@@ -175,7 +175,7 @@ class MainApp(UiMainWindow, QMainWindow)
             self.calc_screen.setText('0')
             self.current_operation = 'sub'
 
-        if index == 19:  # addition button clicked
+        if index == 10:  # addition button clicked
             if '+' in self.small_calc_screen.text():
                 self.small_calc_screen.setText(str(Ops.add(self.small_calc_screen.text().split()[0],
                                                            self.calc_screen.text())) + ' + ')
@@ -185,7 +185,7 @@ class MainApp(UiMainWindow, QMainWindow)
             self.calc_screen.setText('0')
             self.current_operation = 'add'
 
-        if index == 20:  # plus-minus button clicked
+        if index == 11:  # plus-minus button clicked
             if len(self.calc_screen.text()) == 1 and self.calc_screen.text() == '0':
                 return  # do nothing
 
@@ -199,13 +199,13 @@ class MainApp(UiMainWindow, QMainWindow)
 
             self.current_operation = 'neg'
 
-        if index == 22:  # point button clicked
+        if index == 12:  # point button clicked
             if '.' in self.calc_screen.text():
                 return  # don't allow multiple points
             else:
                 self.calc_screen.setText(self.calc_screen.text() + '.')
 
-        if index == 23:  # equal to button clicked
+        if index == 13:  # equal to button clicked
             if '=' in self.small_calc_screen.text():
                 return  # do nothing if an answer has already been gotten
 
